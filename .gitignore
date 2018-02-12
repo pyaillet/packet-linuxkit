@@ -1,0 +1,6 @@
+*api.key
+*.terraform
+*.tfstate*
+*inventory.cfg
+*.retry
+*id_rsa*

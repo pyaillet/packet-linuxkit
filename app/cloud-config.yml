@@ -1,0 +1,10 @@
+#cloud-config
+# vim: syntax=yaml
+packages:
+ - docker.io
+ - git
+runcmd:
+ - [ cd, root ]
+ - [ git, clone, "https://github.com/linuxkit/linuxkit.git" ]
+ - [ cd, linuxkit ]
+ - [ make ]
