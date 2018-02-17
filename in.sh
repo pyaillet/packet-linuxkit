@@ -1,11 +1,11 @@
 #!/bin/sh
 
-docker build . -t tools
+docker build . -t packet-linuxkit/tools
 
 if [[ $? -eq 0 ]]; then
-    docker rm -f tools 
+    docker rm -f packet-linuxkit-tools 
     
     docker run -it \
         -v $PWD/app:/root/app \
-        --name tools tools
+        --name packet-linuxkit-tools packet-linuxkit/tools
 fi
