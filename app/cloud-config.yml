@@ -6,5 +6,3 @@ packages:
 runcmd:
  - [ cd, root ]
  - [ git, clone, "https://github.com/linuxkit/linuxkit.git" ]
- - [ cd, linuxkit ]
- - [ make ]
