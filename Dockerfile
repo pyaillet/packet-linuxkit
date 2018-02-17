@@ -5,7 +5,7 @@ ENV TERRAFORM_VERSION=0.11.3
 ENV TERRAFORM_FILE=terraform_${TERRAFORM_VERSION}_linux_amd64.zip
 
 RUN apk update && \
-    apk add bash curl git openssh-client gcc make musl-dev libffi-dev openssl-dev && \
+    apk add bash curl git jq openssh-client gcc make musl-dev libffi-dev openssl-dev && \
     curl -o /root/$TERRAFORM_FILE https://releases.hashicorp.com/terraform/$TERRAFORM_VERSION/$TERRAFORM_FILE
 
 WORKDIR /root
